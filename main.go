@@ -3,8 +3,12 @@ package main
  import "fmt"
 
  func main () {
-	var numeros = []int{1, 2, 3, 4, 5}
-	fmt.Println(numeros)
-	numeros = append(numeros, 6, 7, 8)
-	fmt.Println(numeros, len(numeros), cap(numeros))
+	nomes := []string{"Eduardo", "Bruno", "Pedro", "Yan", "Vini"}
+	fmt.Println(nomes)
+	nomesOne := nomes[:2]
+	fmt.Println(nomesOne)
+	nomesTwo := nomes[3:5]
+	fmt.Println(nomesTwo)
+	rangeOne := nomes[2]
+	fmt.Println(rangeOne)
  }
